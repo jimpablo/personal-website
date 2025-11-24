@@ -1,10 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC, ReactNode } from "react";
 import DarkModeToggle from "../DarkModeToggle";
 import Switch from "../Switch";
+import ThemeColorSwitcher from "../ThemeColorSwitcher";
 import { DevNote } from "../home/dev_notes/DevNote";
-import Link from "next/link";
+
 
 type Props = {
   children?: ReactNode;
@@ -43,6 +45,7 @@ export const NavBar: FC<Props> = ({ children }) => {
           </motion.div>
         )}
       </AnimatePresence>
+      <ThemeColorSwitcher />
       <DarkModeToggle />
       <DevNote className="absolute w-56 top-16 right-3 rotate-[2deg]">
         The dark mode toggle adds or removes the <code>dark</code> class to the
