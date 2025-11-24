@@ -74,13 +74,13 @@ const BlogPost = forwardRef<HTMLDivElement, Props>(
     return (
       <>
         <Head>
-          <title>{title} | Javier Morales</title>
+          <title>{title} | Jim Pablo</title>
           <meta name="description" content={description} />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
           <meta property="og:image" content={metaImage} />
           {metaVideo && <meta property="og:video" content={metaVideo} />}
-          <meta name="author" content="Javier Morales" />
+          <meta name="author" content="Jim Pablo" />
         </Head>
         <Layout
           navbarContent={

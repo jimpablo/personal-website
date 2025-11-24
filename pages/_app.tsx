@@ -1,7 +1,7 @@
-import type { AppProps } from "next/app";
 import { Analytics } from "@vercel/analytics/react";
-import "../styles/styles.css";
+import type { AppProps } from "next/app";
 import Head from "next/head";
+import "../styles/styles.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -23,8 +23,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff"></meta>
         <meta
           name="description"
-          content="I'm Javi, a software engineer with a passion for great user experiences."
-        ></meta>
+          content="I'm Jim, a Software Engineer crafting simple, beautiful digital experiences."
+        />
       </Head>
       <Component {...pageProps} />
       <Analytics />

@@ -1,5 +1,4 @@
 import GitHubLogo from "../assets/github.svg";
-import LinkedInLogo from "../assets/linkedin.svg";
 import ExternalLink from "../components/ExternalLink";
 import Layout from "../components/Layout";
 import { SectionHeader } from "../components/home/SectionHeader";
@@ -41,10 +40,10 @@ export default function Home() {
         </div>
         <div>
           <h1 className="z-10 mt-6 mb-2 text-6xl font-bold text-center text-primary">
-            Hi, Javi here.
+            Hi, Jim here.
           </h1>
           <p className="mb-20 text-2xl leading-loose text-center text-on-primary-container/70">
-            I'm a software engineer with a passion for great user experiences.
+            I'm a Software Engineer crafting simple, beautiful digital experiences.
           </p>
         </div>
 
@@ -71,24 +70,17 @@ export default function Home() {
           <div>
             <p className="mt-10 text-center">
               Drop me a line at{" "}
-              <a href="mailto:hi@javiermorales.dev">hi@javiermorales.dev</a> ✉️
+              <a href="mailto:jimpablo11@icloud.com">jimpablo11@icloud.com</a> ✉️
             </p>
           </div>
         </main>
         <footer className="flex items-center justify-center w-full h-20 space-x-2 text-sm">
           <ExternalLink
-            href="https://github.com/JavierM42"
+            href="https://github.com/jimpablo"
             className="flex items-center justify-center w-12 h-12 transition-colors rounded-full text-primary hover:bg-surface/40"
-            label="GitHub @JavierM42"
+            label="GitHub @jimpablo"
           >
             <GitHubLogo className="w-8 h-8" />
-          </ExternalLink>
-          <ExternalLink
-            href="https://www.linkedin.com/in/javierm42/"
-            className="flex items-center justify-center w-12 h-12 transition-colors rounded-full text-primary hover:bg-surface/40"
-            label="LinkedIn /javierm42"
-          >
-            <LinkedInLogo className="w-6 h-6" />
           </ExternalLink>
         </footer>
       </div>
