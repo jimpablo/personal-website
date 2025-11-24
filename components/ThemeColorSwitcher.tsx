@@ -36,10 +36,9 @@ export default function ThemeColorSwitcher() {
                         exit={{ opacity: 0, width: 0, scale: 0.98 }}
                         transition={{
                             type: "spring",
-                            stiffness: 500,
-                            damping: 25,
-                            mass: 0.4,
-                            opacity: { duration: 0.15 },
+                            stiffness: 800,
+                            damping: 20,
+                            mass: 0.2,
                         }}
                         className="flex items-center gap-2 overflow-visible origin-right"
                     >
@@ -68,9 +67,9 @@ export default function ThemeColorSwitcher() {
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{
                             type: "spring",
-                            stiffness: 600,
-                            damping: 22,
-                            mass: 0.3,
+                            stiffness: 800,
+                            damping: 18,
+                            mass: 0.2,
                         }}
                     >
                         <SquareButton
