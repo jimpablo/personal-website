@@ -17,7 +17,7 @@ export const NavBar: FC<Props> = ({ children }) => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 flex items-center w-full gap-4 px-4 shadow-xl h-14 shadow-primary/10 bg-surface/40 backdrop-blur">
-      <div className="relative flex items-center flex-1 h-full gap-6 overflow-visible">
+      <div className="relative flex items-center flex-1 h-full gap-6 overflow-visible flex-nowrap">
         <Link href="/">
           <span className="font-[Nunito] text-lg hover:underline text-primary cursor-pointer">
             javiermorales.dev
@@ -45,8 +45,10 @@ export const NavBar: FC<Props> = ({ children }) => {
           </motion.div>
         )}
       </AnimatePresence>
-      <ThemeColorSwitcher />
-      <DarkModeToggle />
+      <div className="flex items-center gap-2 flex-shrink-0">
+        <ThemeColorSwitcher />
+        <DarkModeToggle />
+      </div>
       <DevNote className="absolute w-56 top-16 right-3 rotate-[2deg]">
         The dark mode toggle adds or removes the <code>dark</code> class to the
         body, which is then picked up by the{" "}
