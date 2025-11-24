@@ -17,7 +17,7 @@ export const NavBar: FC<Props> = ({ children }) => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 flex items-center w-full gap-4 px-4 shadow-xl h-14 shadow-primary/10 bg-surface/40 backdrop-blur">
-      <div className="relative flex items-center flex-1 h-full gap-6 overflow-x-clip">
+      <div className="relative flex items-center flex-1 h-full gap-6 overflow-visible">
         <Link href="/">
           <span className="font-[Nunito] text-lg hover:underline text-primary cursor-pointer">
             javiermorales.dev

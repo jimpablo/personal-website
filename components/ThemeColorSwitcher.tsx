@@ -41,7 +41,7 @@ export default function ThemeColorSwitcher() {
                             mass: 0.4,
                             opacity: { duration: 0.15 },
                         }}
-                        className="flex items-center gap-2 overflow-hidden origin-right"
+                        className="flex items-center gap-2 overflow-visible origin-right"
                     >
                         <motion.div
                             initial={{ opacity: 0, x: 6 }}
