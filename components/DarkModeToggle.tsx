@@ -63,7 +63,9 @@ export default function DarkModeToggle() {
         className="w-6 h-6 stroke-primary"
         strokeLinecap="round"
         animate={colorScheme}
+        initial={colorScheme}
         fill="none"
+        transition={shouldReduceMotion ? { duration: 0 } : { type: "spring", stiffness: 400, damping: 30 }}
       >
         <motion.circle
           r={10}
